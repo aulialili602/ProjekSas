@@ -108,3 +108,7 @@ const cariIndex = (nama) => {
     document.getElementById('textKontak').value=""
     document.getElementById('textLomba').value=""
  }
+
+ let daftarPeserta = 0;
+
+ conts 
