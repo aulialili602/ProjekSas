@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        /* background-image: url(gambar2.jpg);
+        background-position: center; */
+        height: 500px;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+    }
+    .btn {
+       /* display: flex; */
+       align-items: center; 
+       margin-top: 60px;
+       margin-right: 60px;
+    }
+    .atas, .h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    /* .DAFTAR, .INFORMASI {
+        display: flex;
+        flex-direction: column;
+    } */
+    .box-login {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px 40px;
+  background-color: rgb (176.224.230);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="atas">
+            <div class="tulisan">
+                <h1>SELAMAT DATANG!</h1>
+            </div>
+    
+            <div class="btn">
+                <button>DAFTAR</button>
+                <button>INFORMASI</button>
+            </div>
+    
+        </div>
+
+        <div class="box-login">
+            <h2>Silahkan Login</h2>
+    
+            <label>Nama Pengguna</label>
+            <input type="text">
+    
+            <label>Sandi</label>
+            <input type="password">
+    
+            <button type="submit">Login</button>
+        </div>
+
+    </div>
+</body>
+</html>

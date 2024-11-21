@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <script src="index.js"></script>
+
+    <div class="container">
+        <div class="row">
+        <div class="col-3">
+            <div class="card bg-info">
+                <div class="card-header">
+                </div>
+                <div class="card-body">
+                    <div class="list-group">
+                        <a href="" class="list-group-item">Pendaftaran</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="col-9">
+        <div class="card bg-info">
+            <div class="card-header">
+                Tambah Peserta
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                  <label class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="textNama"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Kota / Kabupaten </label>
+                    <input type="text" class="form-control" id="textKota"/>
+                </div>
+                
+
+                <div class="mb-3">
+                    <label class="form-label">Asal Sekolah</label>
+                    <input type="text" class="form-control" id="textAsalsekolah"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Kontak</label>
+                    <input type="number" class="form-control" id="textKontak"/>
+                </div>
+
+                <div class="mb-3">
+                    <label class="from-label">Mata lomba</label>
+                            <select  class="form-control" id="textLomba">
+                            <option value="Pilih"> Pilih </option>
+                            <option value="Matematika"> Matematika</option>
+                            <option value="IPA"> IPA</option>
+                            <option value="PPKN"> PPKN</option>
+                            <option value="Sejarah"> Sejarah</option>
+                            <option value="Bahasa Indonesia"> Bahasa Indonesia</option>
+                            
+                            </select>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <button class="btn btn-primary" onclick="tambahPeserta()">Simpan</button>
+                        <button class="btn btn-warning" onclick="batalEdit()">cancel</button>
+            </div>
+            </div>
+
+            <div class="card">
+                <table class="table table-striped" id="tblPeserta">
+                    <thead>
+                      <tr>
+                        <th>no</th>
+                        <th>nama</th>
+                        <th>kota</th>
+                        <th>Sekolah</th>
+                        <th>Kontak</th>
+                        <th>lomba</th>
+                        <th>Edit</th>
+                        <th>hapus</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                        <td><button class="btn btn-warning" onclick="editPeserta()">Edit</button></td>
+                        <td><button class="btn btn-danger" onclick="hapusPeserta()">Delete</button></td>
+                    
+                      </tbody>
+                      </table>
+            </div>
+            </div>
+        
+       </div>
+    </div>
+
+
+ 
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</html>
